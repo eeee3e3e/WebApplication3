@@ -17,12 +17,9 @@ namespace WebApplication3
             builder.WebHost.UseUrls("http://0.0.0.0:8080");
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
+            // Configure the HTTP request pipeline. 
                 app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+                app.UseSwaggerUI(); 
             
             app.UseAuthorization();
 
